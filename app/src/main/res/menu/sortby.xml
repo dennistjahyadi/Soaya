@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mostPopular"
+        android:title="Most Popular">
+    </item>
+    <item
+        android:id="@+id/mostViewed"
+        android:title="Most Viewed">
+    </item>
+    <item
+        android:id="@+id/newest"
+        android:title="Newest">
+    </item>
+    <item
+        android:id="@+id/lastPost"
+        android:title="Last Post">
+    </item>
+
+</menu>

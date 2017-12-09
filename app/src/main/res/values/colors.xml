@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="colorAccent">#e57373</color>
+    <color name="toolbarBackground">#f44336</color>
+    <color name="layoutBackground">#eceff1</color>
+    <color name="merah">#ef5350</color>
+    <color name="jingga">#ff9800</color>
+    <color name="kuning">#ffeb3b</color>
+    <color name="hijau">#4caf50</color>
+    <color name="biru">#2196f3</color>
+    <color name="ungu">#673ab7</color>
+
+
+</resources>

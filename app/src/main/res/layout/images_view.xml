@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add_photo"
+                android:id="@+id/imageViewImage"
+                />
+            <TextView
+                android:id="@+id/buttonCancel"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/fa_close"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="top|right"/>
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:textSize="14sp"
+        android:background="@android:color/transparent"
+        android:id="@+id/editTextCaption"
+        android:hint="Add a caption"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:id="@+id/textViewSaveCaption"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:text="Save"
+        android:padding="4dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        />
+</LinearLayout>

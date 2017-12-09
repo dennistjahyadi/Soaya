@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/caldroid_white">
+   <android.support.v4.widget.SwipeRefreshLayout
+       android:id="@+id/swipeRefreshLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <com.dennistjahyadigotama.soaya.MyNestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_bottom"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageViewProfilePic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="6dp"
+        android:layout_centerHorizontal="true"
+
+         />
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/imageViewProfilePic"
+            android:textColor="#212121"
+            android:textSize="16dp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textViewName"/>
+
+
+
+        <TextView
+            android:id="@+id/textViewFakultas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="3dp"
+            android:layout_below="@+id/textViewUsername"/>
+</RelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/border_bottom"
+        android:padding="3dp"
+        android:weightSum="3">
+
+
+        <LinearLayout
+            android:id="@+id/linPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_weight="1">
+            <TextView
+
+                android:text="comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/textViewPosts"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:layout_marginBottom="4dp"
+               />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_weight="1">
+            <TextView
+                android:text="threads"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/textViewThreads"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="2dp"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:layout_weight="1">
+            <TextView
+                android:text="friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+               />
+            <TextView
+                android:id="@+id/textViewFriends"
+                android:text="0"
+                android:textStyle="bold"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewAAA"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textSize="16sp"
+        android:text=""
+        android:layout_marginTop="3dp"
+        android:background="@drawable/border_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</LinearLayout>
+
+       </com.dennistjahyadigotama.soaya.MyNestedScrollView>
+   </android.support.v4.widget.SwipeRefreshLayout>
+
+</android.support.design.widget.CoordinatorLayout>

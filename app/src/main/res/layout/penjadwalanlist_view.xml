@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/textViewOrganisasi"
+        android:text="organisasi"
+        android:textColor="@color/caldroid_holo_blue_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewTanggal"
+        android:text="tanggal"
+        android:textColor="#515151"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewEvent"
+        android:layout_marginTop="2dp"
+        android:text="event"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

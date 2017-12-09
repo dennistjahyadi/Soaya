@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/toolbarBackground"
+android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+
+        </LinearLayout>
+        <com.google.android.gms.common.SignInButton
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:id="@+id/buttonLogin"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#f44336"
+
+            />
+
+
+
+        <ImageView
+            android:src="@drawable/logo_soaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/loginLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sign in With"
+            android:textColor="#ffffff"
+            android:id="@+id/textView"
+            android:layout_below="@+id/loginLayout"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

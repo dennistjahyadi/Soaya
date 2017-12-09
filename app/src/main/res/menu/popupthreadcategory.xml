@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="IT">
+        <menu>
+            <item
+                android:id="@+id/infor_Programming"
+                android:title="Programming" />
+            <item
+                android:id="@+id/infor_Event"
+                android:title="Event IT" />
+            <item
+                android:id="@+id/infor_Information"
+                android:title="Information IT" />
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/lounge"
+        android:title="Lounge">
+
+    </item>
+    <item
+        android:id="@+id/jualBeli"
+        android:title="Jual Beli">
+
+    </item>
+    <item
+        android:id="@+id/eventKampus"
+        android:title="Event Kampus">
+
+    </item>
+
+</menu>

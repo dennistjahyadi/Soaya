@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/caldroid_white"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbarBackground"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:titleTextColor="#FFFFFF"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/textViewUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewRelation"
+                    android:text=""
+                    android:padding="15dp"
+                    android:textColor="#ffffff"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <com.dennistjahyadigotama.soaya.MyNestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/border_bottom"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imageViewProfilePic"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:adjustViewBounds="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_centerHorizontal="true"
+
+                        />
+                    <TextView
+                        android:id="@+id/textViewName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/imageViewProfilePic"
+                        android:textColor="#212121"
+                        android:textSize="16dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="2dp"/>
+                    <TextView
+                        android:id="@+id/textViewFakultas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/textViewName"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/border_bottom"
+                    android:padding="3dp"
+                    android:weightSum="3">
+
+
+                    <LinearLayout
+                        android:id="@+id/linPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:layout_weight="1">
+                        <TextView
+
+                            android:text="comments"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            />
+
+                        <TextView
+                            android:id="@+id/textViewPosts"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="#414141"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="4dp"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linThread"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:layout_weight="1">
+                        <TextView
+                            android:text="threads"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/textViewThreads"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textColor="#414141"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="2dp"
+
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linFriend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:layout_weight="1">
+                        <TextView
+                            android:text="friends"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            />
+                        <TextView
+                            android:id="@+id/textViewFriends"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp"
+                            android:textColor="#414141"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewAAA"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_marginTop="1dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+
+
+            </LinearLayout>
+        </com.dennistjahyadigotama.soaya.MyNestedScrollView>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

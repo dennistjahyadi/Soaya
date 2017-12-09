@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Fakultas Teknik">
+    </item>
+
+    <item
+        android:title="Fakultas Industri Kreatif">
+
+    </item>
+    <item
+        android:title="Fakultas Farmasi">
+    </item>
+
+    <item
+        android:title="Fakultas Hukum">
+
+    </item>
+    <item
+        android:title="Fakultas Bisnis dan Ekonomika">
+    </item>
+
+    <item
+        android:title="Fakultas Psikologi">
+
+    </item>
+    <item
+        android:title="Fakultas Teknobiologi">
+
+    </item>
+    <item
+        android:title="Fakultas Kedokteran">
+
+    </item>
+
+</menu>

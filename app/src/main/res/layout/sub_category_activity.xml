@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/caldroid_white"
+android:fitsSystemWindows="true"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbarBackground"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:titleTextColor="#FFFFFF"
+            app:theme="@style/ToolbarColoredBackArrow"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true">
+
+                <EditText
+                    android:id="@+id/editTextSearch"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#ffffff"
+                    android:hint="Search"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imageViewSearch"/>
+                <ImageView
+                    android:id="@+id/imageViewSearch"
+                    android:src="@drawable/ic_search_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    />
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <LinearLayout
+                android:id="@+id/linlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:background="#f44336"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/textViewCategoryName"
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="11dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="16dp"
+                        android:layout_toLeftOf="@+id/buttonSubscribe"/>
+                    <TextView
+                        android:id="@+id/buttonSubscribe"
+                        android:text="subscribe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#e57373"
+                        android:elevation="4dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/transparent"
+                        android:textStyle="bold"
+                        android:clickable="true"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:paddingTop="6dp"
+                        android:paddingBottom="6dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <RelativeLayout
+                    android:background="#f44336"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:text=""
+                        android:id="@+id/textViewSortIndicator"
+                        android:textColor="#ffffff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fabSortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fab_margin"
+                app:fab_colorNormal="#ff8f00"
+                app:fab_colorPressed="#ff6f00"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_sort_white"
+                app:fab_label="Sort"
+                style="@style/MenuButtonsSmall" />
+</RelativeLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

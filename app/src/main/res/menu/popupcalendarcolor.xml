@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/merah"
+        android:icon="@color/merah"
+        android:title="Merah">
+    </item>
+    <item
+        android:id="@+id/jingga"
+        android:icon="@color/jingga"
+        android:title="Jingga">
+    </item>
+    <item
+        android:id="@+id/kuning"
+        android:icon="@color/kuning"
+
+        android:title="Kuning">
+    </item>
+    <item
+        android:id="@+id/hijau"
+        android:icon="@color/hijau"
+
+        android:title="Hijau">
+    </item>
+    <item
+        android:id="@+id/biru"
+        android:icon="@color/biru"
+
+        android:title="Biru">
+    </item>
+    <item
+        android:id="@+id/ungu"
+        android:icon="@color/ungu"
+        android:title="Ungu">
+    </item>
+
+</menu>

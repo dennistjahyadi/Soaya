@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbarBackground"
+    android:fitsSystemWindows="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your account information"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#ffffff"
+        android:id="@+id/tvText"
+        android:layout_marginTop="38dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="Your Name"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#ffffff"
+        android:maxLength="35"
+        android:id="@+id/editTextName"
+        android:layout_below="@+id/tvText"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#ffffff"
+
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:id="@+id/editTextUserName"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:ems="10"
+        android:hint="Fakultas"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#ffffff"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/editTextFakultas"
+        android:layout_below="@+id/editTextUserName"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:ems="10"
+        android:enabled="false"
+        android:textColorHint="#E0E0E0"
+        android:textColor="#ffffff"
+
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:id="@+id/editTextEmail"
+        android:layout_below="@+id/editTextFakultas"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:singleLine="true"
+        android:background="#e57373"
+        android:id="@+id/buttonRegister"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editTextEmail" />
+
+
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>

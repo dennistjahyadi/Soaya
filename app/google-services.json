@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "958089539530",
+    "firebase_url": "https://ubaya-12451.firebaseio.com",
+    "project_id": "ubaya-12451",
+    "storage_bucket": "ubaya-12451.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958089539530:android:dc607de8c736f227",
+        "android_client_info": {
+          "package_name": "com.dennistjahyadigotama.soaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958089539530-uc7o2fob8is7seue0eug6mfnvs12frd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dennistjahyadigotama.soaya",
+            "certificate_hash": "E93CE7CAE28AB4C170DD7EFD5C2DB1F05ED91DB5"
+          }
+        },
+        {
+          "client_id": "958089539530-2gga21mktnub0i9osb0are0ga24il0k5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5NXypuQ4kZSsUUaa9tyZfYGz42U7vufc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
