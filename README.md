@@ -7,7 +7,7 @@ installation:
 2. copy "lul" folder to htdocs
 3. create a database with name = "smile" 
 4. import smile.sql to database
-5. you change android setting in User.java (for web service location)
+5. change android setting in User.java (for web service location)
 6. web service config on lul/ubaya/config.php (setting for database name, username, password)
 
 you can check this app in play store https://play.google.com/store/apps/details?id=com.dennistjahyadigotama.soaya&hl=en
