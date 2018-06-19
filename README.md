@@ -11,3 +11,4 @@ installation:
 6. web service config on lul/ubaya/config.php (setting for database name, username, password)
 
 you can check this app in play store https://play.google.com/store/apps/details?id=com.dennistjahyadigotama.soaya&hl=en
+app in play store no longer exist. Because i don't add privacy policy for my apps.
